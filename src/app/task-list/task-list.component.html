@@ -1,0 +1,36 @@
+<div>
+    <h2 class="header">{{ title }}</h2>
+</div>
+
+<!--
+<app-task-item
+*ngFor="let todoTask of todoTasks"
+[TodoList]="todoTask"
+></app-task-item>
+-->
+
+  
+    <div class="body" *ngFor="let todo of todoTask; let i = id">
+           
+        <div>
+            <span class="id">ID : </span> {{i + 1}}
+            <span class="name">Name : </span>
+            <span class="description">description</span>
+            <span class="remove">
+                <button (click)='removeTask(i)'>X</button>
+            </span>
+        </div>
+        <div>
+            <span class="name">Name :</span>
+            <input [(ngModel)]="TodoList.name" type="text">
+        </div>
+        <div>
+            <span class="description">Description : </span>
+            <input [(ngModel)]="TodoList.description" type="text">
+        </div>
+        <div>
+            <button (click)="addTask()">Add Task</button>
+        </div>
+    </div>
+
+

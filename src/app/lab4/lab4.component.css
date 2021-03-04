@@ -1,0 +1,13 @@
+.header {
+    color: blue;
+    font-size: 30px;
+    background-color: paleturquoise;
+}
+
+.number-even {
+   color: green;
+}
+
+.number-odd {
+    color: red;
+}
